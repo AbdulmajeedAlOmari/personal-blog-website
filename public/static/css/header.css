@@ -1,0 +1,97 @@
+/* By default, the css is specified for desktop users. */
+
+.header {
+  background-color: #26282b;
+  border-radius: 15px;
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
+}
+
+.banner-holder {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-holder > .navbar > ul > li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-form {
+  border-radius: 30px;
+  padding: 11px;
+}
+
+.search-form, .search-text-button, .search-text-input {
+  background-color: #353941;
+  color: white;
+}
+
+.search-form:focus-within {
+  border: solid 1px #90b8f8;
+}
+
+.search-text-button, .search-text-input, .search-text-input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-text-button:hover {
+  color: #90b8f8;
+}
+
+.contact-links-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  /* gap: 1px 20px; */
+  column-gap: 12px;
+  row-gap: 1px;
+  font-size: 1.5em;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 2px solid #353941;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0.4rem 0px;
+  margin: 0;
+}
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .banner-logo {
+    font-size: 1.5em;
+  }
+
+  .contact-links-holder {
+    margin: 0.67em 0;
+  }
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .banner-holder {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-links-holder {
+    margin: 0.67em 0;
+  }
+
+  .navbar > ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}

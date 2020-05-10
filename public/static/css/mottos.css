@@ -1,0 +1,38 @@
+@import "main.css";
+
+.card {
+  padding: 15px 30px;
+}
+
+.mottos-header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px gray;
+}
+
+.mottos-header-text {
+  color: #5f85db;
+}
+
+.fa-star {
+  color: #90b8f8;
+}
+
+.motto-text {
+  color: rgba(255, 255, 246, 0.7);;
+}
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .mottos-header-text {
+    font-size: 1.3em;
+  }
+
+  .motto-text {
+    font-size: 0.9em;
+  }
+}

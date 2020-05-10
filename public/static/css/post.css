@@ -1,0 +1,87 @@
+@import "main.css";
+
+.card {
+  padding: 0 30px;
+  min-height: 350px;
+}
+
+.post-header-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: solid 2px gray;
+}
+
+.post-header-info-holder {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-header-image {
+  max-width: 7em;
+}
+
+.post-header-text {
+  margin-left: 20px;
+  font-size: 2em;
+}
+
+.post-header-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  float: right;
+}
+
+.post-header-details-key {
+  color: #5f85db;
+}
+
+.post-header-details-value {
+  color: #90b8f8;
+}
+
+.post-content {
+  text-align: justify;
+}
+
+.post-footer-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid 1px gray;
+  padding: 15px 0;
+}
+
+.post-footer-button {
+  color: #90b8f8;
+  border: solid 1px #90b8f8;
+  padding: 7px;
+  border-radius: 13px;
+}
+
+.post-footer-button:hover {
+  color: #5f85db;
+  border-color: #5f85db;
+}
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .post-header-info-holder {
+    font-size: 0.8em;
+  }
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .post-header-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-header-info-holder {
+    font-size: 0.8em;
+  }
+}

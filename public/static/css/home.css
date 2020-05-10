@@ -1,0 +1,113 @@
+@import "main.css";
+
+.blog-main-content {
+  margin: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 3rem;
+}
+
+.blog-main-content > .posts {
+  /* To show cards of posts in a grid style */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 1rem;
+}
+
+.blog-main-content > .side-bar {
+  /* To allow adding multiple sections in the side bar vertically */
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  /* To fill the whole side bar with the card */
+  height: 100%;
+  padding: 0 15px;
+}
+
+.post-header-holder {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: solid 1px gray;
+}
+
+.post-image {
+  max-width: 4em;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.post-image:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.post-header {
+  font-size: 1.1rem;
+  margin-left: 1em;
+}
+
+.post-content {
+  font-weight: lighter !important;
+  text-align: justify;
+  padding-bottom: 0.5rem;
+}
+
+.post-link {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 0.9rem;
+  text-decoration: dashed underline;
+}
+
+.post-date {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.7em;
+  font-style: italic;
+  color: #90b8f8;
+}
+
+.latest-post-header {
+  margin-top: 15px;
+  color: #90b8f8;
+}
+
+.latest-post-header-text {
+  display: inline;
+  padding-left: 2px;
+  font-size: 1em;
+  color: #90b8f8;
+}
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .blog-main-content {
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  
+  .blog-main-content > .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .blog-main-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .blog-main-content > .posts {
+    grid-template-columns: 1fr;
+  }
+}
