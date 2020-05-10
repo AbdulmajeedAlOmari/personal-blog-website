@@ -94,7 +94,7 @@
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
   }
-  
+
   .blog-main-content > .posts {
     grid-template-columns: 1fr;
   }
@@ -106,7 +106,7 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .blog-main-content > .posts {
     grid-template-columns: 1fr;
   }

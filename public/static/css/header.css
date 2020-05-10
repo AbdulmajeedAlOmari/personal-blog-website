@@ -47,7 +47,7 @@
 
 .contact-links-holder {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   /* gap: 1px 20px; */
   column-gap: 12px;
   row-gap: 1px;
