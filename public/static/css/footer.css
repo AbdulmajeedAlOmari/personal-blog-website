@@ -1,17 +1,23 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-.wrapper {
+html {
+  position: relative;
   min-height: 100%;
-  margin-bottom: -50px;
 }
 
-.footer, .push {
-  height: 50px;
+body {
+  margin: 0 0 140px;
 }
 
 .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 110px;
+  width: 100%;
   background-color: #26282b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.heart-color {
+  color: #90b8f8;
 }
