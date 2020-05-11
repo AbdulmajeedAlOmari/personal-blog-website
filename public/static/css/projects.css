@@ -1,0 +1,24 @@
+@import "main.css";
+
+.projects-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.card {
+  padding: 10px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: solid 1px gray;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.project-details {
+  list-style-type: square;
+}
