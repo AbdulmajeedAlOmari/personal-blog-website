@@ -1,0 +1,42 @@
+@import "main.css";
+
+.visited-places-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.visited-place-image-holder {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.visited-place-image {
+  max-width: 70%;
+  border-radius: 25px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.visited-place-image:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .visited-places-holder {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .visited-places-holder {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
