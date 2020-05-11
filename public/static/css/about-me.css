@@ -1,0 +1,76 @@
+@import "main.css";
+
+.card {
+  padding: 0 30px;
+  min-height: 350px;
+}
+
+.about-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.personal-image {
+  padding: 30px;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.personal-image:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.personal-info-holder {
+  border-left: solid 2px gray;
+  padding: 30px;
+}
+
+.about-header-text {
+  color: #5f85db;
+}
+
+.personal-info-key {
+  color: #90b8f8;
+}
+
+.personal-info-row {
+  margin-bottom: 15px;
+}
+
+/* In case of small desktop screens */
+@media screen and (min-width: 1051px) and (max-width: 1350px) {
+  .personal-image {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .personal-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .personal-info-holder {
+    border-left: none;
+    border-top: solid 2px gray;
+  }
+
+  .about-holder {
+    flex-direction: column;
+  }
+
+  .personal-image {
+    height: 150px;
+    width: 150px;
+  }
+}
