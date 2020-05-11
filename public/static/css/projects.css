@@ -22,3 +22,19 @@
 .project-details {
   list-style-type: square;
 }
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .projects-holder {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* In case of mobile users: */
+@media screen and (max-width: 700px){
+  .projects-holder {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+  }
+}
