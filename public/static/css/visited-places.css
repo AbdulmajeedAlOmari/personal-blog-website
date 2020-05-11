@@ -25,6 +25,11 @@
   -webkit-filter: grayscale(0%);
 }
 
+.visited-place-caption {
+  font-weight: thin;
+  font-style: italic;
+}
+
 /* In case of tablet users: */
 @media screen and (min-width: 701px) and (max-width: 1050px) {
   .visited-places-holder {
